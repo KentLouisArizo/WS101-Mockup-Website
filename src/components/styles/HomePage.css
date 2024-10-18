@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Pixelify Sans Regular';
+  src: url('../fonts/PixelifySans-Regular.ttf') format('truetype');
+}
+
+.home-page {
+  height: 100vh;
+  background-image: url('../imgs/hero-bg.png'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Pixelify Sans Regular', sans-serif; 
+}
+
+.hero-content h1 {
+  color: yellow;
+  font-size: 38px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .home-page {
+      padding: 0 20px; 
+  }
+
+  .hero-content h1 {
+      font-size: 30px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .home-page {
+      padding: 0 15px; 
+  }
+
+  .hero-content h1 {
+      font-size: 24px; 
+  }
+}
